@@ -1,0 +1,83 @@
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<div class="d-flex" id="wrapper">
+
+            <div class="bg-white" id="sidebar-wrapper">
+                <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase">
+                    <i class="fas fa-user-secret me-2"></i> PENAID     
+                    <i class="fas fa-align-right primary-text fs-4" id="menu-toggle"></i> 
+                </div>
+                <div class="list-group list-group-flush my-3">
+                    <a href="#" class="list-group-item list-group-item-action bg-transparent second-text">
+                        <i style='font-size:16px; color:#fcc201' class="fa fa-fw fa-home"></i> Home</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-transparent second-text">
+                        <i  style='font-size:16px; color:#fcc201' class="fa fa-fw fa-user"></i> Users</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-transparent second-text">
+                        <i style= 'font-size: 16px; color:#fcc201' class="bi bi-unlock"></i> Roles and Permissions</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-transparent second-text">
+                        <i style= 'font-size: 16px; color:#fcc201' class="bi bi-coin"></i>  Payment Vendors</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-transparent second-text">
+                        <i style='font-size:16px; color:#fcc201' class="fa fa-fw fa-institution"></i>  Institutions</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-transparent second-text">
+                        <i class='fa fa-fw fa-industry' style='font-size:16px; color:#fcc201'></i>  Industires</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-transparent second-text">
+                        <i style='font-size:16px; color:#fcc201' class='fa fa-fw fa-archive'></i>  Loans</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-transparent second-text">
+                        <i style='font-size:16px; color:#fcc201' class='fa fa-fw fa-archive'></i>  Transactions</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-transparent">
+                        <i style='font-size:16px; color:#fcc201' class='fa fa-fw fa-calculator'></i>  Loan Calculator</a>
+                </div>
+            
+            </div>
+
+            <!-- side bar ends here -->
+
+
+            <div id="page-content-wrapper">
+
+                <nav class="navbar navbar-expand-lg py-4 px-4">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+                        <h2 class="fs-2 m-0">Dashboard</h2>
+                    </div>
+                
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle second-text fw-bold" href="#" id="navbarDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-user me-2"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">John Doe</a></li>
+                                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+               <div class="table-container">
+                <app-table-component></app-table-component>
+               </div>
+                
+               
+
+            </div>
+
+
+
+
+</div>
