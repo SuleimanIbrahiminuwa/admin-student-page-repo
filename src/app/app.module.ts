@@ -20,8 +20,8 @@ import { StudentDashboardComponent } from './component/student-dashboard/student
   ],
   imports: [
     BrowserModule,
-    Ng2FilterPipeModule,
-    Ng2SearchPipeModule,
+    // Ng2FilterPipeModule,
+    // Ng2SearchPipeModule,
     FormsModule,
     HttpClientModule   
   ],
