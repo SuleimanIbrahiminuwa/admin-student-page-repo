@@ -1,1 +1,120 @@
-<p>table-component works!</p>
+
+<!------ Include the above in your HEAD tag ---------->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Penaid</title>
+
+
+
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  
+
+    <!-- Custom styles for this template -->
+    <link href="table-component.component.css" rel="stylesheet">
+
+   
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+  </head>
+
+  <body>
+
+   <!--Nav Bar Here--> 
+
+    
+
+    <div class="container-fluid">
+      <div class="row">
+       <!---Side Bar Here-->
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        
+
+          <div class="row placeholders">
+            <form class="navbar-form navbar-left">
+                <input  type="text" class="inputs" name="search" [(ngModel)]="searchTerm"  placeholder="Search By Sponsor/Student Name or Mobile">
+              </form>
+          </div>
+          
+          
+          
+
+        
+        
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Student Name:</th>
+                  <th>Phone Number:</th>
+                  <th>University:</th>
+                  <th>Course:</th>
+                  <th>Loan Amount Requested:</th>
+                  <th>Loan Amount Disbursed:</th>
+                  <th>Sponsor Name:</th>
+                  <th>Profile Verify Status:</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                
+                 
+                <tr *ngFor="let  user of userDetails | filter:searchTerm">
+                    <td>{{ user.StudentName }}</td>
+                    <td>{{ user.PhoneNumber }}</td>
+                    <td>{{ user.University }}</td>
+                    <td>{{ user.Course }}</td>
+                    <td>{{ user.LoanAmountRequested }}</td>
+                    <td>{{ user.LoanAmountDisburse }}</td>
+                    <td>{{ user.SponsorName }}</td>
+                    <td><span class="dot"></span><div class="verify">{{ user.ProfileVerifyStatus }}</div></td>
+                    <td>
+                        <div class="dropdowns">
+                            <!-- <button class="dropbtns">Dropdown</button> -->
+                              <h4>...</h4>
+                            <div class="dropdown-contents">
+                              <a href="#">View</a>
+                              <a href="#">Delete</a>
+                            </div>
+                          </div>
+                    </td>
+                  </tr>
+                
+              </tbody>
+             
+            </table>
+            <div class="col text-center">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
