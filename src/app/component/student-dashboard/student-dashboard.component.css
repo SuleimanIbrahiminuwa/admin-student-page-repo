@@ -5,8 +5,11 @@
   .rounded-full {
     border-radius: 100%;
   }
+
+  
   
   #wrapper {
+    
     overflow-x: hidden;
     background-color:#EFF2F6;
   }
@@ -20,6 +23,7 @@
     -moz-transition: margin 0.25s ease-out;
     -o-transition: margin 0.25s ease-out;
     transition: margin 0.25s ease-out;
+    width: 315px;
   }
   
   #sidebar-wrapper .sidebar-heading {
