@@ -5,8 +5,11 @@
   .rounded-full {
     border-radius: 100%;
   }
+
+  
   
   #wrapper {
+    
     overflow-x: hidden;
     background-color:#EFF2F6;
   }
@@ -20,6 +23,7 @@
     -moz-transition: margin 0.25s ease-out;
     -o-transition: margin 0.25s ease-out;
     transition: margin 0.25s ease-out;
+    width: 315px;
   }
   
   #sidebar-wrapper .sidebar-heading {
@@ -27,9 +31,9 @@
     font-size: 1.2rem;
   }
   
-  #sidebar-wrapper .list-group {
+  /* #sidebar-wrapper .list-group {
     width: 15rem;
-  }
+  } */
   
   #page-content-wrapper {
     min-width: 100vw;
@@ -81,8 +85,13 @@
     background-color:#fcc201;
     
     height:60px;
+   
+   
     
     
+}
+.navbar-nav{
+  position: relative;
 }
 
 
@@ -90,15 +99,27 @@
 .nav-item {
 
     background-color: #fcc201;
-    margin-right: 5rem;
+   margin-left: 5rem;
     
+}
+
+.profile{
+
+  /* background-color: red; */
+  float: right;
 }
 
 
 .dropdown-menu {
-   position: relative;
-   margin-left: 47rem;
+  position: relative;
+   
+  top: 6rem;
  
+}
+.logo-image{
+  position: relative;
+  width: 10vh;
+  margin-top: 0px;
 }
   
   @media (min-width: 768px) {
