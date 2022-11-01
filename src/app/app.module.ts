@@ -8,7 +8,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { TableComponentComponent } from './component/table-component/table-component.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { StudentDashboardComponent } from './component/student-dashboard/student-dashboard.component';
-
     
 
 @NgModule({
@@ -17,6 +16,7 @@ import { StudentDashboardComponent } from './component/student-dashboard/student
     StudentDashboardComponent,
     TableComponentComponent,
     CardComponent
+  
   ],
   imports: [
     BrowserModule,
@@ -25,7 +25,8 @@ import { StudentDashboardComponent } from './component/student-dashboard/student
     FormsModule,
     HttpClientModule   
   ],
-  providers: [],
+ 
   bootstrap: [AppComponent]
+  
 })
 export class AppModule { }
